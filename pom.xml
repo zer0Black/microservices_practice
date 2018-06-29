@@ -12,6 +12,7 @@
         <module>implicit</module>
         <module>password</module>
         <module>client</module>
+        <module>client-rest-template</module>
     </modules>
 
     <packaging>pom</packaging>
