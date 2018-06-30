@@ -15,6 +15,10 @@ public class ClientUserDetails implements UserDetails {
         this.clientUser = user;
     }
 
+    public ClientUser getClientUser() {
+        return clientUser;
+    }
+
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return new HashSet<>();

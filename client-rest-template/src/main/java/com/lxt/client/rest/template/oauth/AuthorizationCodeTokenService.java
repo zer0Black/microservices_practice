@@ -58,7 +58,8 @@ public class AuthorizationCodeTokenService {
 
         RequestEntity<MultiValueMap<String, String>> requestEntity = new RequestEntity<>(
                 configuration.getBody(authorizationCode),
-                configuration.getHeader(authBase64), HttpMethod.POST,
+                configuration.getHeader(authBase64),
+                HttpMethod.POST,
                 URI.create("http://localhost:8080/oauth/token"));
 
         ResponseEntity<OAuth2Token> responseEntity = rest.exchange(requestEntity, OAuth2Token.class);
